@@ -2,7 +2,29 @@
 <html>
     <head></head>
     <body>
-
+        <button id="buttonAdd">add</button>
+        <div id="modal">
+            <form>
+                <div>
+                    <input type="text" name="first_name" required>
+                    <label for="first_name">first name</label>
+                </div>
+                <div>
+                    <input type="text" name="last_name" required>
+                    <label for="last-name" required>last name</label>
+                </div>
+                <div>
+                    <input type="email" name="email" required>
+                    <label for="email">email</label>
+                </div>
+                <div>
+                    <input type="number" name="id" required>
+                    <label for="id">id</label>
+                </div>
+                <button>add</button>
+                <button>close</button>
+            </form>
+        </div>
         <script>
          const userName = (name) => {
             return new Promise((resolve, reject) => {
